@@ -115,7 +115,7 @@ class OBJECT_OT_Button(bpy.types.Operator):
                 meshes.add(l.attrib['name'])
 
         for mesh in meshes:
-            bpy.ops.import_mesh.stl(files=[{"name": mesh + ".STL"}],
+            bpy.ops.import_mesh.stl(files=[{"name": mesh + ".stl"}],
                                     directory=stl_dir)
         return {'FINISHED'}
 
